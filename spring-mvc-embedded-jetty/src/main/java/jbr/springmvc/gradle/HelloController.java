@@ -15,6 +15,7 @@ public class HelloController {
 
 	@RequestMapping("/bye")
 	public String bye(ModelMap map) {
+		System.out.println("Mapping Functionality");
 		map.put("message", "GOOD BYE. Meet you soon!!!");
 		return "bye";
 	}
