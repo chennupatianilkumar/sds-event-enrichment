@@ -22,6 +22,7 @@ public class LoginController {
 
   @RequestMapping(value = "/login", method = RequestMethod.GET)
   public ModelAndView showLogin(HttpServletRequest request, HttpServletResponse response) {
+    System.out.println("Login Access steps");
     ModelAndView mav = new ModelAndView("login");
     mav.addObject("login", new Login());
 
